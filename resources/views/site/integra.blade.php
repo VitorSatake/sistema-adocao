@@ -19,7 +19,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-4">
-                    <a href="index.html" title="KBR TEC" class="d-inline-block">
+                    <a href="home" title="KBR TEC" class="d-inline-block">
                         <h1>
                             <img src="img/logo.webp" alt="KBR TEC" width="150">
                         </h1>
@@ -128,7 +128,7 @@
                     </div>
 
                     <div class="col-12">
-                        <a href="formulario.html" class="btn btn-custom mt-5 w-100 d-flex align-items-center justify-content-center gap-2">
+                        <a href="formulario" class="btn btn-custom mt-5 w-100 d-flex align-items-center justify-content-center gap-2">
                             Solicitar adoção
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">

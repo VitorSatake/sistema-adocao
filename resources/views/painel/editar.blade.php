@@ -31,7 +31,7 @@
                             <a class="dropdown-item text-end" href="#">
                                 <small>Alterar Senha</small>
                             </a>
-                            <a class="dropdown-item text-end" href="login.html">
+                            <a class="dropdown-item text-end" href="login">
                                 <small>Sair</small>
                             </a>
                         </li>
