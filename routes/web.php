@@ -41,8 +41,8 @@ use Illuminate\Support\Facades\Route;
 
 
 
-
-// diminuindo o codigo para a view, chamando pelo controller
+// Rotas Área Pública
+// diminuindo o codigo para a view, executado pelo controller
 Route::get('/home', [HomeController::class, 'index']);
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/quero-adotar', [QueroAdotarController::class, 'index']);
