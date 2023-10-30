@@ -19,26 +19,44 @@
                 </div>
     
                 <div class="col-6 d-flex align-items-center p-5">
-                    <form action="painel" class="form w-100">
+                    
+
+                    <form action="{{ route('login.auth') }}" class="form w-100" method="POST" onsubmit="return validarPost()">
+                        @csrf
                         <h2 class="h4 text-light mb-4">Painel Administrativo</h2>
-    
+                        
                         <div class="row row-gap-3">
+                            @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                     @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                            @endif
+                            
                             <div class="col-12 form-group text-light">
                                 <label for="email">E-mail:</label>
-                                <input type="email" class="form-control bg-dark border-dark text-light" id="email" placeholder="example@kbrtec.com.br">
+                                <input type="email" name='email' class="form-control bg-dark border-dark text-light" id="email" placeholder="example@kbrtec.com.br">
                                 <!-- <small class="bg-danger rounded py-1 px-2 mt-1 d-block text-light">Erro</small> -->
                             </div>
     
                             <div class="col-12 form-group text-light">
                                 <label for="password">Senha:</label>
-                                <input type="password" class="form-control bg-dark border-dark text-light" id="password">
+                                <input type="password" name='password' class="form-control bg-dark border-dark text-light" id="password">
                                 <!-- <small class="bg-danger rounded py-1 px-2 mt-1 d-block text-light">Erro</small> -->
     
                                 <a href="recuperar-senha" class="link-light"><small>Esqueci minha senha</small></a>
                             </div>
     
                             <div class="col-12">
-                                <button type="submit" class="btn btn-light mt-3">Entrar</button>
+                                @if(config('services.recaptcha.key'))
+                                    <div class="g-recaptcha" data-callback="recaptchaCallback" 
+                                    data-sitekey="{{config('services.recaptcha.key')}}">
+                                </div>                                                   <button type="submit" class="btn btn-light mt-3">Entrar</button>                   
+                                @endif
+                                
                             </div>
                         </div>
                     </form>
@@ -50,6 +68,25 @@
     <footer class="bg-custom text-light text-center py-4">
         <small>© Copyright 2023 - KBR TEC - Todos os Direitos Reservados</small>
     </footer>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <script>
+        // validando se o captcha foi selecionado
+        function validarPost() {
+        if(grecaptcha.getResponse() != "") return true;
+
+        alert('Execute o Captcha "Não sou um robô"!');
+        return false;
+    }
+
+    </script>
+
+    <script>
+        function onSubmit(token) {
+          document.getElementById("demo-form").submit();
+        }
+      </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>

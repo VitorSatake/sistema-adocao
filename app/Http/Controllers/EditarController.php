@@ -10,4 +10,6 @@ class EditarController extends Controller
     public function index(){
         return view('painel.editar');
     }
+
+    
 }

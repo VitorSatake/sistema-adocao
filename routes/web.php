@@ -52,8 +52,12 @@ Route::get('/formulario', [FormularioController::class, 'index']);
 
 
 // Rotas Área Administrativa
-Route::get('/painel', [PainelController::class, 'index']);
+Route::get('/painel', [PainelController::class, 'index'])->name('painel');
 Route::get('/recuperar-senha', [RecuperarSenhaController::class, 'index']);
 Route::get('/cadastrar', [CadastrarController::class, 'index']);
 Route::get('/login', [LoginController::class, 'index']);
 Route::get('/editar', [EditarController::class, 'index']);
+
+// Rota de autenticação de usuário
+Route::post('/login', [LoginController::class, 'auth'])->name('login.auth');
+Route::post('/remover', [PainelController::class, 'removeUsuario'])->name('painel.removeUsuario');
