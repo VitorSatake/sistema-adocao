@@ -59,8 +59,11 @@
                             <label for="especie" class="text-capitalize text-light">Espécie</label>
                             <select name="especie" id="especie" class="form-control form-select">
                                 <option value="" selected disabled>Selecione</option>
+                                
                             </select>
                         </div>
+
+                        
 
                         <div class="form-group py-2">
                             <label for="raca" class="text-capitalize text-light">Raça</label>
@@ -477,7 +480,13 @@
                             <li class="page-item"><a class="page-link btn-custom" href="#">2</a></li>
                             <li class="page-item"><a class="page-link btn-custom" href="#">3</a></li>
                             <li class="page-item"><a class="page-link btn-custom" href="#">Próximo</a></li>
+                           
+                            
+                       
                         </ul>
+                        <div>
+                            {{ $especies -> links() }}
+                        </div>
                     </nav>
                 </main>
             </div>

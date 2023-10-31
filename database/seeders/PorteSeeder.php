@@ -4,19 +4,18 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\User;
+use App\Models\Porte;
 
-class UsersSeeder extends Seeder
+class PorteSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        User::create([
-            'name' => 'Teste',
-            'email' => 'teste@teste.com',
-            'password' => bcrypt('12345'),
+        Porte::create([
+            'descricao' => 'Teste',
+            
         ]);
     }
 }

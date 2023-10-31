@@ -43,7 +43,7 @@ use Illuminate\Support\Facades\Route;
 
 // Rotas Área Pública
 // diminuindo o codigo para a view, executado pelo controller
-Route::get('/home', [HomeController::class, 'index']);
+Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/quero-adotar', [QueroAdotarController::class, 'index']);
 Route::get('/integra', [IntegraController::class, 'index']);
@@ -55,9 +55,15 @@ Route::get('/formulario', [FormularioController::class, 'index']);
 Route::get('/painel', [PainelController::class, 'index'])->name('painel');
 Route::get('/recuperar-senha', [RecuperarSenhaController::class, 'index']);
 Route::get('/cadastrar', [CadastrarController::class, 'index']);
-Route::get('/login', [LoginController::class, 'index']);
+Route::get('/login', [LoginController::class, 'index'])->name('login.login');
 Route::get('/editar', [EditarController::class, 'index']);
 
 // Rota de autenticação de usuário
 Route::post('/login', [LoginController::class, 'auth'])->name('login.auth');
 Route::post('/remover', [PainelController::class, 'removeUsuario'])->name('painel.removeUsuario');
+Route::get('/logout', [LoginController::class, 'logout'])->name('login.logout');
+
+Route::get('/formulario', [FormularioController::class, 'create'])->name('formulario.create');
+Route::post('/formulario', [FormularioController::class, 'store'])->name('formulario.store');
+Route::post('/cadastrar', [CadastrarController::class, 'store'])->name('cadastrar.store');
+

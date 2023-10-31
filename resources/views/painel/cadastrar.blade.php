@@ -91,26 +91,27 @@
                 <a href="painel" class="btn btn-light">Voltar</a>
             </div>
 
-            <form action="" class="bg-custom rounded col-12 py-3 px-4">
+            <form action="{{ route('cadastrar.store')}}" class="bg-custom rounded col-12 py-3 px-4" method="POST">
+                @csrf
                 
                 <div class="mb-3 row">
-                    <label for="usuario" class="col-sm-2 col-form-label">Usuário:</label>
+                    <label for="" class="col-sm-2 col-form-label">Usuário:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control bg-dark text-light border-dark" id="usuario" placeholder="Ex: Admin">
+                        <input type="text" class="form-control bg-dark text-light border-dark" name="name" id="name" placeholder="Ex: Admin">
                     </div>
                 </div>
 
                 <div class="mb-3 row">
-                    <label for="email" class="col-sm-2 col-form-label">E-mail:</label>
+                    <label for="" class="col-sm-2 col-form-label">E-mail:</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control bg-dark text-light border-dark" id="email" placeholder="Ex: admin@kbrtec.com.br">
+                        <input type="email" class="form-control bg-dark text-light border-dark" name="email" id="email" placeholder="Ex: admin@kbrtec.com.br">
                     </div>
                 </div>
 
                 <div class="mb-3 row">
-                    <label for="senha" class="col-sm-2 col-form-label">Senha:</label>
+                    <label for="" class="col-sm-2 col-form-label">Senha:</label>
                     <div class="col-sm-10">
-                        <input type="password" class="form-control bg-dark text-light border-dark" id="senha">
+                        <input type="password" class="form-control bg-dark text-light border-dark" name="password" id="password">
                     </div>
                 </div>
 

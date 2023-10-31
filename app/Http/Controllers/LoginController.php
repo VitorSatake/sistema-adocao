@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\RedirectResponse;
 
+
+
 class LoginController extends Controller
 {
 
@@ -49,6 +51,18 @@ class LoginController extends Controller
             'email' => 'Usuario ou senha invalido.',
         ]);
     }
+
+    public function logout(Request $request) {
+
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect(route('login.login'));
+
+
+   }
+
+
 
 
     public function index(){

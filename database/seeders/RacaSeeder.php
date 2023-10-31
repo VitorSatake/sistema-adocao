@@ -4,19 +4,18 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\User;
+use App\Models\Raca;
 
-class UsersSeeder extends Seeder
+class RacaSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
     public function run(): void
     {
-        User::create([
-            'name' => 'Teste',
-            'email' => 'teste@teste.com',
-            'password' => bcrypt('12345'),
+        Raca::create([
+            'descricao' => 'Teste',
+            
         ]);
     }
 }

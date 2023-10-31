@@ -54,40 +54,47 @@
 
             <p class="text-center">Preencha aqui os dados da pessoa interessada em adotar o animal selecionado:</p>
 
-            <form action="" class="bg-custom rounded p-4 mt-4 col-6 mx-auto row">
+            <form action="{{ route('formulario.store')}} " class="bg-custom rounded p-4 mt-4 col-6 mx-auto row" method="POST">
+                @csrf
                 <div class="form-group py-2 col-12">
-                    <label for="solicitante" class="text-capitalize text-light">Seu nome:</label>
-                    <input type="text" class="form-control" name="solicitante" id="solicitante">
+                    <label for="" class="text-capitalize text-light">Seu nome:</label>
+                    <input type="text" class="form-control" name="nome" id="nome">
                 </div>
 
                 <div class="form-group py-2 col-12">
-                    <label for="animal" class="text-capitalize text-light">Nome <span class="text-lowercase">do</span> animal:</label>
-                    <input type="text" class="form-control" name="animal" id="animal" value="Tini" disabled>
+                    <label for="" class="text-capitalize text-light">Nome <span class="text-lowercase">do</span> animal:</label>
+                    <input type="text" class="form-control" name="animal" id="animal" value="Tini" > <!--disabled-->
                 </div>
 
                 <div class="form-group py-2 col-6">
-                    <label for="cpf" class="text-capitalize text-light">CPF:</label>
+                    <label for="" class="text-capitalize text-light">CPF:</label>
                     <input type="text" class="form-control" name="cpf" id="cpf">
                 </div>
 
                 <div class="form-group py-2 col-6">
-                    <label for="email" class="text-capitalize text-light">E-mail:</label>
+                    <label for="" class="text-capitalize text-light">E-mail:</label>
                     <input type="email" class="form-control" name="email" id="email">
                 </div>
 
                 <div class="form-group py-2 col-6">
-                    <label for="cel" class="text-capitalize text-light">Celular:</label>
-                    <input type="text" class="form-control" name="cel" id="cel">
+                    <label for="" class="text-capitalize text-light">Celular:</label>
+                    <input type="text" class="form-control" name="celular" id="celular">
                 </div>
 
                 <div class="form-group py-2 col-6">
-                    <label for="nascimento" class="text-capitalize text-light">Data <span class="text-lowercase">de</span> Nascimento:</label>
-                    <input type="text" class="form-control" name="nascimento" id="nascimento">
+                    <label for="" class="text-capitalize text-light">Data <span class="text-lowercase">de</span> Nascimento:</label>
+                    <input type="text" class="form-control" name="data_nascimento" id="data_nascimento">
                 </div>
 
+                <div class="col-12">
+                    @if(config('services.recaptcha.key'))
+                        <div class="g-recaptcha" data-callback="recaptchaCallback" 
+                        data-sitekey="{{config('services.recaptcha.key')}}">
+                    </div>
                 <div class="col-12 d-flex justify-content-center mt-4">
-                    <button class="btn btn-custom-2">Solicitar</button>
+                    <button type="submit" class="btn btn-custom-2">Solicitar</button>
                 </div>
+                @endif
             </form>
         </div>
     </section>
@@ -118,6 +125,19 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <script>
+        // validando se o captcha foi selecionado
+        function validarPost() {
+        if(grecaptcha.getResponse() != "") return true;
+
+        alert('Execute o Captcha "Não sou um robô"!');
+        return false;
+    }
+
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
