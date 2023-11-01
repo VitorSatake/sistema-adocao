@@ -54,21 +54,36 @@
                         <div class="mb-3 text-light bowlby-one">
                             Filtros
                         </div>
+                        
+                                
+                                
 
+                                   
+                               
                         <div class="form-group py-2">
                             <label for="especie" class="text-capitalize text-light">Espécie</label>
-                            <select name="especie" id="especie" class="form-control form-select">
-                                <option value="" selected disabled>Selecione</option>
-                                
+
+                            
+                           
+                            <select name="especie" id="especie" class="form-control form-select" >
+                                @foreach ($especie as $especie)
+                                <option selected disabled>
+                                    {{$especie->descricao}}
+                                </option>
+                                 @endforeach<br>
                             </select>
+                            
                         </div>
+                       
 
                         
 
                         <div class="form-group py-2">
                             <label for="raca" class="text-capitalize text-light">Raça</label>
-                            <select name="raca" id="raca" class="form-control form-select">
-                                <option value="" selected disabled>Selecione</option>
+                            <select name="raca" id="raca" class="form-control form-select" >
+                                @foreach ($raca as $raca)
+                                <option value="" selected disabled>{{$raca->descricao}}</option>
+                                @endforeach<br>
                             </select>
                         </div>
 
@@ -80,7 +95,9 @@
                         <div class="form-group py-2">
                             <label for="porte" class="text-capitalize text-light">Porte</label>
                             <select name="porte" id="porte" class="form-control form-select">
-                                <option value="" selected disabled>Selecione</option>
+                                @foreach ($porte as $porte)
+                                <option value="" selected disabled>{{$porte->descricao}}</option>
+                                @endforeach<br>
                             </select>
                         </div>
 
@@ -112,9 +129,10 @@
 
                     <div class="row row-gap-4 mt-4">
 
+                       
                         <div class="col-xxl-3 col-4">
                             <div class="card rounded overflow-hidden">
-                                <a href="integra">
+                                <a href="integraBili">
                                     <img src="img/bili.webp" alt="" class="w-100 object-fit-cover" height="320">
                                 </a>
 
@@ -131,7 +149,7 @@
 
                                     <p class="mb-4 fs-md">Petz Casa Grande, Diadema - SP</p>
 
-                                    <a href="integra" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
+                                    <a href="integraBili" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
                                         Quero Adotar
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
@@ -141,6 +159,7 @@
                                 </div>
                             </div>
                         </div>
+                 
 
                         <div class="col-xxl-3 col-4">
                             <div class="card rounded overflow-hidden">
@@ -174,7 +193,7 @@
 
                         <div class="col-xxl-3 col-4">
                             <div class="card rounded overflow-hidden">
-                                <a href="integra">
+                                <a href="integraLuna">
                                     <img src="img/luna.webp" alt="" class="w-100 object-fit-cover" height="320">
                                 </a>
 
@@ -191,7 +210,7 @@
 
                                     <p class="mb-4 fs-md">Petz Vila Gomes, São Paulo - SP</p>
 
-                                    <a href="integra" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
+                                    <a href="integraLuna" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
                                         Quero Adotar
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
@@ -204,7 +223,7 @@
 
                         <div class="col-xxl-3 col-4">
                             <div class="card rounded overflow-hidden">
-                                <a href="integra">
+                                <a href="integraBird">
                                     <img src="img/bird.webp" alt="" class="w-100 object-fit-cover" height="320">
                                 </a>
 
@@ -221,7 +240,7 @@
 
                                     <p class="mb-4 fs-md">Petz Centro, Teresina - PI</p>
 
-                                    <a href="integra" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
+                                    <a href="integraBird" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
                                         Quero Adotar
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
@@ -234,7 +253,7 @@
                         
                         <div class="col-xxl-3 col-4">
                             <div class="card rounded overflow-hidden">
-                                <a href="integra">
+                                <a href="integraSuzy">
                                     <img src="img/suzy.webp" alt="" class="w-100 object-fit-cover" height="320">
                                 </a>
 
@@ -251,7 +270,7 @@
 
                                     <p class="mb-4 fs-md">Petz Parque Imperial, São Paulo - SP</p>
 
-                                    <a href="integra" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
+                                    <a href="integraSuzy" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
                                         Quero Adotar
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
@@ -485,7 +504,7 @@
                        
                         </ul>
                         <div>
-                            {{ $especies -> links() }}
+                          
                         </div>
                     </nav>
                 </main>

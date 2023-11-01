@@ -30,4 +30,16 @@ class FormularioController extends Controller
 
         return view('site.index');
     }
+
+    public function show()
+    {
+
+        $dados = Solicitante::all();
+      
+        dd($dados);
+        return view('painel.exibesolicitantes', compact('dados'));
+    }
+
+
+ 
 }

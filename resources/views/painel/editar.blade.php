@@ -87,19 +87,21 @@
                 <a href="painel.html" class="btn btn-light">Voltar</a>
             </div>
 
-            <form action="" class="bg-custom rounded col-12 py-3 px-4">
-                
+            <form action="{{route('editar.update')}}"  class="bg-custom rounded col-12 py-3 px-4" method="PUT">
+                @csrf
                 <div class="mb-3 row">
                     <label for="usuario" class="col-sm-2 col-form-label">Usuário:</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control bg-dark text-light border-dark" id="usuario" placeholder="Ex: Admin" value="Admin">
+                        
+                        <input type="text" class="form-control bg-dark text-light border-dark" id="usuario" placeholder="Ex: Admin" >
                     </div>
+                    
                 </div>
 
                 <div class="mb-3 row">
                     <label for="email" class="col-sm-2 col-form-label">E-mail:</label>
                     <div class="col-sm-10">
-                        <input type="email" class="form-control bg-dark text-light border-dark" id="email" placeholder="Ex: admin@kbrtec.com.br" value="admin@kbrtec.com.br">
+                        <input type="email" class="form-control bg-dark text-light border-dark" id="email" placeholder="Ex: admin@kbrtec.com.br" >
                     </div>
                 </div>
 
@@ -111,7 +113,7 @@
                 </div>
 
                 <div class="d-flex justify-content-end">
-                    <button type="submit" class="btn btn-light">Salvar</button>
+                    <button type="submit" class="btn btn-light" href="{{route('editar.update')}}">Salvar</button>
                 </div>
             </form>
 

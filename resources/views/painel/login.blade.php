@@ -54,7 +54,9 @@
                                 @if(config('services.recaptcha.key'))
                                     <div class="g-recaptcha" data-callback="recaptchaCallback" 
                                     data-sitekey="{{config('services.recaptcha.key')}}">
-                                </div>                                                   <button type="submit" class="btn btn-light mt-3">Entrar</button>                   
+                                
+                                </div>                                                   
+                                <button type="submit" class="btn btn-light mt-3">Entrar</button>                   
                                 @endif
                                 
                             </div>

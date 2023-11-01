@@ -14,7 +14,7 @@ class PorteSeeder extends Seeder
     public function run(): void
     {
         Porte::create([
-            'descricao' => 'Teste',
+            'descricao' => 'Pequeno',
             
         ]);
     }

@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Especie;
+use App\Models\Raca;
+use App\Models\Porte;
+
 
 class QueroAdotarController extends Controller
 {
@@ -18,13 +21,16 @@ class QueroAdotarController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show()
     {
 
-        $especies = Especie::all();
-
-        foreach ($especies as $especie) {
-            echo "$especie";
-        }
+        $especie = Especie::all();
+        $raca = Raca::all();
+        $porte = Porte::all();
+        
+        return view('site.quero-adotar', compact('especie', 'raca', 'porte'));
     }
+
+
+
 }

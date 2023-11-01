@@ -22,24 +22,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Rotas Área Pública
-//Route::get('/',function(){return view('site.index');});
-//Route::get('/home',function(){return view('site.index');});
-//Route::get('/quero-adotar',function(){return view('site.quero-adotar');});
-//Route::get('/integra',function(){return view('site.integra');});
-//Route::get('/formulario',function(){return view('site.formulario');});
-
-
-
-// Rotas Área Administrativa
-//Route::get('/painel',function(){return view('painel.painel');});
-//Route::get('/recuperar-senha',function(){return view('painel.recuperar-senha');});
-//Route::get('/cadastrar',function(){return view('painel.cadastrar');});
-//Route::get('/login',function(){return view('painel.login');});
-//Route::get('/editar',function(){return view('painel.editar');});
-
-
-
 
 // Rotas Área Pública
 // diminuindo o codigo para a view, executado pelo controller
@@ -66,4 +48,23 @@ Route::get('/logout', [LoginController::class, 'logout'])->name('login.logout');
 Route::get('/formulario', [FormularioController::class, 'create'])->name('formulario.create');
 Route::post('/formulario', [FormularioController::class, 'store'])->name('formulario.store');
 Route::post('/cadastrar', [CadastrarController::class, 'store'])->name('cadastrar.store');
+
+
+
+
+Route::get('/integraBili', [IntegraController::class, 'bili'])->name('integraBili');
+Route::get('/integraLuna', [IntegraController::class, 'luna'])->name('integraLuna');
+Route::get('/integraBird', [IntegraController::class, 'bird'])->name('integraBird');
+Route::get('/integraSuzy', [IntegraController::class, 'suzy'])->name('integraSuzy');
+
+
+Route::get('/quero-adotar', [QueroAdotarController::class, 'show'])->name('queroadotar.show');
+
+Route::get('/quero-adotar', [QueroAdotarController::class, 'show'])->name('queroadotar.show');
+
+Route::get('/exibesolicitantes', [FormularioController::class, 'show'])->name('solicitantes.show');
+
+Route::put('/editar', [EditarController::class, 'update'])->name('editar.update');
+
+
 

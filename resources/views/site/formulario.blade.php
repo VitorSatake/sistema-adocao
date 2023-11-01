@@ -54,7 +54,7 @@
 
             <p class="text-center">Preencha aqui os dados da pessoa interessada em adotar o animal selecionado:</p>
 
-            <form action="{{ route('formulario.store')}} " class="bg-custom rounded p-4 mt-4 col-6 mx-auto row" method="POST">
+            <form action="{{ route('formulario.store')}} " class="bg-custom rounded p-4 mt-4 col-6 mx-auto row" method="POST" onsubmit="return validarPost()" >
                 @csrf
                 <div class="form-group py-2 col-12">
                     <label for="" class="text-capitalize text-light">Seu nome:</label>
@@ -92,10 +92,15 @@
                         data-sitekey="{{config('services.recaptcha.key')}}">
                     </div>
                 <div class="col-12 d-flex justify-content-center mt-4">
-                    <button type="submit" class="btn btn-custom-2">Solicitar</button>
+                    <button type="submit" class="btn btn-custom-2" >Solicitar</button>
+
                 </div>
                 @endif
+                </div>
+
+               
             </form>
+
         </div>
     </section>
 
@@ -129,7 +134,6 @@
     <script src="https://www.google.com/recaptcha/api.js"></script>
 
     <script>
-        // validando se o captcha foi selecionado
         function validarPost() {
         if(grecaptcha.getResponse() != "") return true;
 

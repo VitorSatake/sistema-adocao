@@ -14,7 +14,7 @@ class EspecieSeeder extends Seeder
     public function run(): void
     {
         Especie::create([
-            'descricao' => 'Teste3',
+            'descricao' => 'Coelho',
             
         ]);
     
