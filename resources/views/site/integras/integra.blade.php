@@ -46,14 +46,18 @@
             </ol>
         </div>
     </nav>
-
+    <form action="integra.show" href="integra.show">
+        @csrf
+    @foreach ($dados as $dados)
+        
+    
     <section class="bg-light py-5">
         <div class="container mb-5">
             <div class="row align-items-start">
                 <div class="col-8 d-flex">
                     <div class="col-3 d-flex flex-wrap row-gap-3">
                         <div class="col-12 rounded overflow-hidden">
-                            <img src="img/tini-2.webp" alt="Tini" class="object-fit-cover w-100" height="120">
+                            <img src="{{ $dados->imagem }}" alt="Tini" class="object-fit-cover w-100" height="120">
                         </div>
 
                         <div class="col-12 rounded overflow-hidden">
@@ -76,7 +80,7 @@
                 
                 <div class="py-3 col-4 d-flex flex-wrap row-gap-3">                   
                     <h2 class="col-12 d-flex align-items-center gap-2">
-                        Tini 
+                        {{$dados->nome}} 
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16">
                             <path fill="#FF7373" fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5z"/>
@@ -89,42 +93,42 @@
 
                     <div class="col-12">
                         <h3 class="fs-sm destaque m-0">Código</h3> 
-                        <div>873012</div>
+                        <div>{{$dados->id}}</div>
                     </div>
 
                     <div class="col-6">
                         <h3 class="fs-sm destaque m-0">Espécie</h3> 
-                        <div>Gato</div>
+                        <div>{{$dados->especie}}</div>
                     </div>
 
                     <div class="col-6">
                         <h3 class="fs-sm destaque m-0">Porte</h3> 
-                        <div>Médio</div>
+                        <div>{{$dados->porte}}</div>
                     </div>
 
                     <div class="col-12">
                         <h3 class="fs-sm destaque m-0">Raça</h3> 
-                        <div>American Shorthair</div>
+                        <div>{{$dados->raca}}</div>
                     </div>
 
                     <div class="col-6">
                         <h3 class="fs-sm destaque m-0">Peso</h3> 
-                        <div>5 Kg</div>
+                        <div>{{$dados->peso}}</div>
                     </div>
 
                     <div class="col-6">
                         <h3 class="fs-sm destaque m-0">Idade</h3> 
-                        <div>3 anos</div>
+                        <div>{{$dados->idade}}</div>
                     </div>
 
                     <div class="col-12">
                         <h3 class="fs-sm destaque m-0">Local</h3> 
-                        <div>Bom Retiro, Curitiba - PR</div>
+                        <div>{{$dados->local}}</div>
                     </div>
                     
                     <div class="col-12">
                         <h3 class="fs-sm destaque m-0">Sobre</h3> 
-                        <div>💖 Frajolinha Fêmea de narizinho rosa</div>
+                        <div>💖 {{$dados->sobre}}</div>
                     </div>
 
                     <div class="col-12">
@@ -140,6 +144,8 @@
             </div>
         </div>
     </section>
+    @endforeach
+</form>
 
     <section class="bg-custom py-3" style="background-color: #FFECCE;">
         <div class="container">

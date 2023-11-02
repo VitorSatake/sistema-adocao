@@ -18,5 +18,6 @@ class raca extends Model
      */
     protected $fillable = [
         'descricao',
+        
     ];
 }

@@ -11,6 +11,7 @@ use App\Http\Controllers\QueroAdotarController;
 use App\Http\Controllers\RecuperarSenhaController;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,7 +31,8 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/quero-adotar', [QueroAdotarController::class, 'index']);
 Route::get('/integra', [IntegraController::class, 'index']);
 Route::get('/formulario', [FormularioController::class, 'index']);
-
+Route::get('/formulario', [FormularioController::class, 'create'])->name('formulario.create');
+Route::post('/formulario', [FormularioController::class, 'store'])->name('formulario.store');
 
 
 // Rotas Área Administrativa
@@ -39,15 +41,13 @@ Route::get('/recuperar-senha', [RecuperarSenhaController::class, 'index']);
 Route::get('/cadastrar', [CadastrarController::class, 'index']);
 Route::get('/login', [LoginController::class, 'index'])->name('login.login');
 Route::get('/editar', [EditarController::class, 'index']);
-
-// Rota de autenticação de usuário
+Route::post('/cadastrar', [CadastrarController::class, 'store'])->name('cadastrar.store');
 Route::post('/login', [LoginController::class, 'auth'])->name('login.auth');
 Route::post('/remover', [PainelController::class, 'removeUsuario'])->name('painel.removeUsuario');
 Route::get('/logout', [LoginController::class, 'logout'])->name('login.logout');
 
-Route::get('/formulario', [FormularioController::class, 'create'])->name('formulario.create');
-Route::post('/formulario', [FormularioController::class, 'store'])->name('formulario.store');
-Route::post('/cadastrar', [CadastrarController::class, 'store'])->name('cadastrar.store');
+
+
 
 
 
@@ -68,3 +68,10 @@ Route::put('/editar', [EditarController::class, 'update'])->name('editar.update'
 
 
 
+Route::get('/integra', [IntegraController::class, 'show'])->name('integra.show');
+
+
+
+Route::get('/painel', [PainelController::class, 'show'])->name('painel.show');
+
+Route::get('/painel', [PainelController::class, 'show'])->name('painel.navegacao');

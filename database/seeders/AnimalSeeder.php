@@ -14,15 +14,16 @@ class AnimalSeeder extends Seeder
     public function run(): void
     {
         Animal::create([
-            'nome' => 'Teste2',
-            'id_especie' => 1,
-            'id_raca' => 1,
-            'idade' => 12,
-            'peso' => 32.5,
-            'id_porte' => 1,
-            'local' => 'teste',
-            'sobre' => 'teste',
-            'id_status' => 1,
+            'nome' => 'Tini',
+            'especie' => 'Gato',
+            'raca' => 'Andorá',
+            'idade' => '3 anos',
+            'peso' => '3 kilos',
+            'porte' => 'Medio',
+            'local' => 'Bom Retiro, Curitiba - PR',
+            'sobre' => 'Frajolinha e Peludinha',
+            'status' => 'ativo',
+            'imagem' => ('img/tini-2.jpg'),
         ]);
     }
 }

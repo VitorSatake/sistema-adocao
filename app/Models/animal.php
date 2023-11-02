@@ -18,13 +18,14 @@ class animal extends Model
      */
     protected $fillable = [
         'nome',
-            'id_especie',
-            'id_raca',
+            'especie',
+            'raca',
             'idade',
             'peso',
-            'id_porte',
+            'porte',
             'local',
             'sobre',
-            'id_status',
+            'status',
+            'imagem',
     ];
 }

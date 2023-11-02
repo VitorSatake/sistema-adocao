@@ -18,5 +18,6 @@ class porte extends Model
      */
     protected $fillable = [
         'descricao',
+        
     ];
 }

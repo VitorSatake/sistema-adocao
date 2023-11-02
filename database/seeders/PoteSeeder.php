@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Porte;
 
-class PorteSeeder extends Seeder
+class PoteSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -18,4 +18,5 @@ class PorteSeeder extends Seeder
             
         ]);
     }
-}
+    }
+

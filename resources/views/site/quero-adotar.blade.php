@@ -50,7 +50,10 @@
         <div class="container-fluid">
             <div class="row">
                 <aside style="width: 320px;">
-                    <form method="" class="bg-custom rounded p-3 text-uppercase pt-4 mt-2 position-sticky" style="top: 1rem;">
+                    
+                    <form method="integra.show" href="integra.show" class="bg-custom rounded p-3 text-uppercase pt-4 mt-2 position-sticky" style="top: 1rem;">
+                        @csrf
+                        
                         <div class="mb-3 text-light bowlby-one">
                             Filtros
                         </div>
@@ -59,31 +62,37 @@
                                 
 
                                    
-                               
+                          
                         <div class="form-group py-2">
+                            
                             <label for="especie" class="text-capitalize text-light">Espécie</label>
 
-                            
+                             
                            
                             <select name="especie" id="especie" class="form-control form-select" >
-                                @foreach ($especie as $especie)
+                                @foreach ($especies as $especies)
                                 <option selected disabled>
-                                    {{$especie->descricao}}
+                                    
+                                    {{$especies->descricao}}
+                        
                                 </option>
-                                 @endforeach<br>
+                                @endforeach
                             </select>
                             
                         </div>
                        
-
                         
+                      
 
                         <div class="form-group py-2">
                             <label for="raca" class="text-capitalize text-light">Raça</label>
                             <select name="raca" id="raca" class="form-control form-select" >
                                 @foreach ($raca as $raca)
-                                <option value="" selected disabled>{{$raca->descricao}}</option>
-                                @endforeach<br>
+                                <option value="" selected disabled>
+                                   {{$raca->descricao}}
+                                    
+                                </option>
+                                @endforeach
                             </select>
                         </div>
 
@@ -97,10 +106,10 @@
                             <select name="porte" id="porte" class="form-control form-select">
                                 @foreach ($porte as $porte)
                                 <option value="" selected disabled>{{$porte->descricao}}</option>
-                                @endforeach<br>
+                                @endforeach
                             </select>
                         </div>
-
+                        
                         <div class="form-group py-2">
                             <div class="w-100 text-capitalize text-light">Sexo</div>
                             
@@ -121,6 +130,7 @@
                             <button type="submit" class="btn btn-custom-2 mt-4">Buscar</button>
                         </div>
                     </form>
+                   
                 </aside>
     
                 <main class="bg-light p-4 pb-5 col">

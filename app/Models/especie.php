@@ -18,5 +18,6 @@ class especie extends Model
      */
     protected $fillable = [
         'descricao',
+        
     ];
 }

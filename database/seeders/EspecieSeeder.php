@@ -17,7 +17,5 @@ class EspecieSeeder extends Seeder
             'descricao' => 'Coelho',
             
         ]);
-    
-}
-
+    }
 }

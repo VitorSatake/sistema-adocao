@@ -15,14 +15,15 @@ return new class extends Migration
         Schema::create('animal', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
-            $table->integer('id_especie');
-            $table->integer('id_raca');
-            $table->integer('idade');
-            $table->float('peso');
-            $table->integer('id_porte');
+            $table->string('especie');
+            $table->string('raca');
+            $table->string('idade');
+            $table->string('peso');
+            $table->string('porte');
             $table->string('local');
             $table->string('sobre');
-            $table->integer('id_status');
+            $table->string('status');
+            $table->binary('imagem');
             $table->timestamps();
         });
         

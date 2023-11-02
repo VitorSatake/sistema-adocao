@@ -9,13 +9,14 @@ use App\Models\Raca;
 use App\Models\Porte;
 
 
+
 class QueroAdotarController extends Controller
 {
     public function index(){
 
-        $especies = Especie::paginate();
+        //$especies = Especie::paginate();
 
-        return view('site.quero-adotar', compact('especies'));
+        return view('site.quero-adotar');
     }
 
     /**
@@ -24,11 +25,13 @@ class QueroAdotarController extends Controller
     public function show()
     {
 
-        $especie = Especie::all();
+        $especies = Especie::all();
         $raca = Raca::all();
         $porte = Porte::all();
         
-        return view('site.quero-adotar', compact('especie', 'raca', 'porte'));
+       
+        
+        return view('site.quero-adotar', compact('especies', 'raca', 'porte'));
     }
 
 

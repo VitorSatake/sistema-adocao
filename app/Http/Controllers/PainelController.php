@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Cart;
+use App\Models\User;
+
 
 class PainelController extends Controller
 {
@@ -12,9 +13,13 @@ class PainelController extends Controller
         return view('painel.painel');
     }
 
-    public function removeUsuario(Request $request) {
-        \Cart::remove($request->id);
+    public function show()
+    {
 
-        return redirect()->route('painel')->with('sucesso', 'Produto removido do carrinho com sucesso!');
+        $users = User::paginate(4);  
+        
+        return view('painel.painel', compact('users'));
     }
+
+    
 }
