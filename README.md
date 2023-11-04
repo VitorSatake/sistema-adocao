@@ -18,6 +18,7 @@
 - A parte de navegação funcional foi realizada em todo o projeto, ou seja, o redirecionamento para as páginas desejadas de acordo com os botões que forem selecionados, assim como todas as rotas que achei necessário de acordo com o que consegui realizar.
 - Foi criada toda a estrutura do projeto no Framework Laravel, onde foi seguido o padrão MVC.
 - O banco de dados foi feito em MySql, onde foram criados os Seeders para inserir dados de acordo com os Models.
+- Banco de Dados - o dump do banco está na raiz do projeto.
 
 
 1. Área Pública
