@@ -4,11 +4,20 @@
 
 ### Ambiente de desenvolvimento/ferramentas:
     
-#### XAMPP for Windows 8.2.4 (Apache + MariaDB + PHP + Perl) , embora o XAMPP possua o MySql , utilizei o MySql local que ja possuia.
+#### XAMPP for Windows 8.2.4 (Apache + MariaDB + PHP + Perl) , embora o XAMPP possua o MySql , utilizei o MySql local que ja possuia. Framework Laravel.
+
+#### Versões
+- Laravel 10
+- PHP - 8.2.4
+- Apache - 2.4.56
+- MySQL - 8.1
+- XAMPP - v3.3.0
 
 #### Projeto
 
-- A parte de navegação funcional foi realizada em todo o projeto, ou seja, o redirecionamento para as páginas desejadas de acordo com os botões que forem selecionados.
+- A parte de navegação funcional foi realizada em todo o projeto, ou seja, o redirecionamento para as páginas desejadas de acordo com os botões que forem selecionados, assim como todas as rotas que achei necessário de acordo com o que consegui realizar.
+- Foi criada toda a estrutura do projeto no Framework Laravel, onde foi seguido o padrão MVC.
+- O banco de dados foi feito em MySql, onde foram criados os Seeders para inserir dados de acordo com os Models.
 
 
 1. Área Pública
@@ -25,9 +34,16 @@
 
 2. Painel Administrativo
     - Login
+    - A página de login está funcionando corretamente, exceto a parte "Esqueci minha senha". Quando o usuário insere seu email e senha, é feita a autenticação e validação se o usuário está cadastrado no sistema (banco de dados), e também foi incluído corretamnete o Captcha, onde o login apenas é feito com o Captcha selecionado, caso contrário aparece mensagem de que é necessário selecionar o Captcha para fazer o login, caso seja inserido usuário ou senha inválida, aparece a mensagem "Usuario ou senha invalido.", caso email ou senha não sejam inseridos, aparece mensagem "O campo email é obrigatório. O campo senha é obrigatório.", após todas as etapas serem validadas, o login é efetuado.
     - Painel
+        - No painel administrativo, é exibido de forma dinâmica os usuários cadastrados no sistema (banco de dados) com nome e email.
+        Foi feita a paginação de acordo com o número de usuários por página, onde limitei em 4 no PainelController.
+        Botões Listagem e Cadastrar funcionando, também está funcionando a parte de logout.
     - Cadastrar
-    - Exibir Solicitantes
+        - A parte de cadastro está funcionando corretamente em inserir os dados no banco de dados, porém quando clica no botão cadastar aparece uma mensagem de erro, mas ao retornar ao painel, o usuário aparece cadastrado corretemente, também no banco de dados.
+    - Listagem (Exibir Solicitantes)
+        - A listagem está funcionando ao listar os dados dos solicitantes, onde criei uma página simples para apresentar esses dados em uma tabela.
     - Navegação
+        - Foi realizada a paginação no painel, de acordo com o descrito enteriormente, onde limitei em 4 usuários, e a partir disso, aumenta a opção de numéros na paginação, porém está funcionando apenas quando clica nos números, no "Anterior" e "Próximo" não.
 
 

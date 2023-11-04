@@ -64,7 +64,7 @@
                                     </svg>
                                 </small>
                             </a>
-                            <a href="painel.painel" class="submenu-link link-light text-decoration-none rounded p-2">
+                            <a href="exibesolicitantes" class="submenu-link link-light text-decoration-none rounded p-2">
                                 <small class="d-flex justify-content-between align-items-center">
                                     Listagem
                                 </small>
