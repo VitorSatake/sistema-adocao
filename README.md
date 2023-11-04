@@ -29,7 +29,7 @@
     - Integra
         - Como não consegui realizar a apresentação da integra de acordo com cada dado cadastrado no banco, criei uma página de integra para cada animal, mas os dados de cada animal estão cadastradados corretamente no banco.
     - Formulário
-        - O formulário está funcionando corretamente, o solicitante preenche com seus dados, e ao clicar no botão de solicitar, os dados são inseridos corretamente no banco de dados na tabela (Solicitante), foi incluído corretamnete o Captcha, onde o formulário apenas é enviado com o Captcha selecionado, caso contrário aparece mensagem de que é necessário selecionar o Captcha para enviar o formulário. Não consegui fazer o envio por email.
+        - O formulário está funcionando corretamente, o solicitante preenche com seus dados, e ao clicar no botão de solicitar, os dados são inseridos corretamente no banco de dados na tabela (Solicitante), foi incluído corretamente o Captcha, onde o formulário apenas é enviado com o Captcha selecionado, caso contrário aparece mensagem de que é necessário selecionar o Captcha para enviar o formulário. Não consegui fazer o envio por email.
 
     
 
