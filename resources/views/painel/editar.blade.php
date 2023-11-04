@@ -113,7 +113,7 @@
                 </div>
 
                 <div class="d-flex justify-content-end">
-                    <button type="submit" class="btn btn-light" href="{{route('editar.update')}}">Salvar</button>
+                    <button type="submit" class="btn btn-light" href="{{route('editar.update')}}" onclick="{{route('editar.update')}}">Salvar</button>
                 </div>
             </form>
 

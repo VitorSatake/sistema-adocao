@@ -42,7 +42,7 @@
             <ol class="breadcrumb m-0">
                 <li class="breadcrumb-item fs-sm"><a href="home">Home</a></li>
                 <li class="breadcrumb-item fs-sm"><a href="quero-adotar">Quero Adotar</a></li>
-                <li class="breadcrumb-item active fs-sm" aria-current="page">Bird</li>
+                <li class="breadcrumb-item active fs-sm" aria-current="page">Gaia</li>
             </ol>
         </div>
     </nav>
@@ -53,30 +53,30 @@
                 <div class="col-8 d-flex">
                     <div class="col-3 d-flex flex-wrap row-gap-3">
                         <div class="col-12 rounded overflow-hidden">
-                            <img src="img/bird.webp" alt="Bird" class="object-fit-cover w-100" height="120">
+                            <img src="img/gaia.webp" alt="Gaia" class="object-fit-cover w-100" height="120">
                         </div>
 
                         <div class="col-12 rounded overflow-hidden">
-                            <img src="img/bird.webp" alt="Bird" class="object-fit-cover w-100" height="120">
+                            <img src="img/gaia.webp" alt="Gaia" class="object-fit-cover w-100" height="120">
                         </div>
 
                         <div class="col-12 rounded overflow-hidden">
-                            <img src="img/bird.webp" alt="Bird" class="object-fit-cover w-100" height="120">
+                            <img src="img/gaia.webp" alt="Gaia" class="object-fit-cover w-100" height="120">
                         </div>
 
                         <div class="col-12 rounded overflow-hidden">
-                            <img src="img/bird.webp" alt="TiBirdni" class="object-fit-cover w-100" height="120">
+                            <img src="img/gaia.webp" alt="Gaia" class="object-fit-cover w-100" height="120">
                         </div>
                     </div>
 
                     <div class="col-9 rounded overflow-hidden">
-                        <img src="img/bird.webp" alt="Bird" class="object-fit-cover w-100 ms-3" height="530">
+                        <img src="img/gaia.webp" alt="Gaia" class="object-fit-cover w-100 ms-3" height="530">
                     </div>
                 </div>
                 
                 <div class="py-3 col-4 d-flex flex-wrap row-gap-3">                   
                     <h2 class="col-12 d-flex align-items-center gap-2">
-                        Bird 
+                        Gaia 
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16">
                             <path fill="#FF7373" fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5z"/>
@@ -89,7 +89,7 @@
 
                     <div class="col-12">
                         <h3 class="fs-sm destaque m-0">Código</h3> 
-                        <div>129381</div>
+                        <div>230131</div>
                     </div>
 
                     <div class="col-6">
@@ -99,17 +99,17 @@
 
                     <div class="col-6">
                         <h3 class="fs-sm destaque m-0">Porte</h3> 
-                        <div>Médio</div>
+                        <div>Pequeno</div>
                     </div>
 
                     <div class="col-12">
                         <h3 class="fs-sm destaque m-0">Raça</h3> 
-                        <div>Maltês</div>
+                        <div>Persa</div>
                     </div>
 
                     <div class="col-6">
                         <h3 class="fs-sm destaque m-0">Peso</h3> 
-                        <div>5 Kg</div>
+                        <div>6 Kg</div>
                     </div>
 
                     <div class="col-6">
@@ -119,16 +119,16 @@
 
                     <div class="col-12">
                         <h3 class="fs-sm destaque m-0">Local</h3> 
-                        <div>Centro, Teresina - PI</div>
+                        <div>Igrejinha, Capanema - PA</div>
                     </div>
                     
                     <div class="col-12">
                         <h3 class="fs-sm destaque m-0">Sobre</h3> 
-                        <div>💖 Mesclado e dócil</div>
+                        <div>💖 Mesclado e Sério </div>
                     </div>
 
                     <div class="col-12">
-                        <a href="formulario" class="btn btn-custom mt-5 w-100 d-flex align-items-center justify-content-center gap-2" id="bird">
+                        <a href="formulario" class="btn btn-custom mt-5 w-100 d-flex align-items-center justify-content-center gap-2">
                             Solicitar adoção
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">

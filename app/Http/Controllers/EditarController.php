@@ -12,8 +12,8 @@ class EditarController extends Controller
         return view('painel.editar');
     }
 
-/*
-public function update(Request $request, $name)
+
+public function update(Request $request, $id)
 {
     $request->validate([
         'name' => 'required',
@@ -22,7 +22,7 @@ public function update(Request $request, $name)
     ]);
 
 
-    $registro = User::find($name);
+    $registro = User::find($id);
 
     if (!$registro) {
         // Lida com o caso em que o registro não foi encontrado
@@ -39,19 +39,21 @@ public function update(Request $request, $name)
 
     return view('painel.painel');
 }
-*/
-public function update(Request $request, $name)
+/*
+public function update(Request $request, $id)
 {
-    $request = User::find($name)->update([
+    $request = User::find($id)->update([
         'name'=>$request->name,
         'email'=>$request->email,
         'password'=>$request->password,
 
+        
+       
     ]);
+
+    $request->save();
     return redirect('painel.painel');
 }
-
-
-
+*/
     
 }

@@ -89,7 +89,7 @@
 
                     <div class="col-12">
                         <h3 class="fs-sm destaque m-0">Código</h3> 
-                        <div>873033</div>
+                        <div>675092</div>
                     </div>
 
                     <div class="col-6">

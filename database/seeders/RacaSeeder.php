@@ -14,7 +14,7 @@ class RacaSeeder extends Seeder
     public function run(): void
     {
         Raca::create([
-            'descricao' => 'Shitzu',
+            'descricao' => 'Angorá',
             
         ]);
     }

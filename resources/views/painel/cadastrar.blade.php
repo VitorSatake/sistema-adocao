@@ -64,7 +64,7 @@
                                     </svg>
                                 </small>
                             </a>
-                            <a href="painel.html" class="submenu-link link-light text-decoration-none rounded p-2">
+                            <a href="painel.painel" class="submenu-link link-light text-decoration-none rounded p-2">
                                 <small class="d-flex justify-content-between align-items-center">
                                     Listagem
                                 </small>
@@ -123,7 +123,7 @@
                 </div>
 
                 <div class="d-flex justify-content-end">
-                    <button type="submit" class="btn btn-light">Cadastrar</button>
+                    <button type="submit" class="btn btn-light" onsubmit="{{ route('cadastrar.store')}}">Cadastrar</button>
                 </div>
             </form>
 

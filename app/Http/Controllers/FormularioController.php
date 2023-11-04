@@ -53,7 +53,7 @@ class FormularioController extends Controller
 
         $dados = Solicitante::all();
       
-        dd($dados);
+        
         return view('painel.exibesolicitantes', compact('dados'));
     }
 

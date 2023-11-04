@@ -293,7 +293,7 @@
 
                         <div class="col-xxl-3 col-4">
                             <div class="card rounded overflow-hidden">
-                                <a href="integra">
+                                <a href="integraTeco">
                                     <img src="img/teco.webp" alt="" class="w-100 object-fit-cover" height="320">
                                 </a>
 
@@ -310,7 +310,7 @@
 
                                     <p class="mb-4 fs-md">Petz Centro, Teresina - PI</p>
 
-                                    <a href="integra" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
+                                    <a href="integraTeco" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
                                         Quero Adotar
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
@@ -323,7 +323,7 @@
 
                         <div class="col-xxl-3 col-4">
                             <div class="card rounded overflow-hidden">
-                                <a href="integra">
+                                <a href="integraBruce">
                                     <img src="img/bruce.webp" alt="" class="w-100 object-fit-cover" height="320">
                                 </a>
 
@@ -340,7 +340,7 @@
 
                                     <p class="mb-4 fs-md">Petz Buritis, Belo Horizonte - MG</p>
 
-                                    <a href="integra" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
+                                    <a href="integraBruce" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
                                         Quero Adotar
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
@@ -353,7 +353,7 @@
 
                         <div class="col-xxl-3 col-4">
                             <div class="card rounded overflow-hidden">
-                                <a href="integra">
+                                <a href="integraMaya">
                                     <img src="img/maya.webp" alt="" class="w-100 object-fit-cover" height="320">
                                 </a>
 
@@ -370,7 +370,7 @@
 
                                     <p class="mb-4 fs-md">Petz Vila Joana, Jundiaí - SP</p>
 
-                                    <a href="integra" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
+                                    <a href="integraMaya" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
                                         Quero Adotar
 
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
@@ -383,7 +383,7 @@
                         
                         <div class="col-xxl-3 col-4">
                             <div class="card rounded overflow-hidden">
-                                <a href="integra">
+                                <a href="integraBela">
                                     <img src="img/bela.webp" alt="" class="w-100 object-fit-cover" height="320">
                                 </a>
     
@@ -400,7 +400,7 @@
     
                                     <p class="mb-4 fs-md">Petz Guará I, Brasília - DF</p>
     
-                                    <a href="integra" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
+                                    <a href="integraBela" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
                                         Quero Adotar
     
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
@@ -413,7 +413,7 @@
 
                         <div class="col-xxl-3 col-4">
                             <div class="card rounded overflow-hidden">
-                                <a href="integra">
+                                <a href="integraGaia">
                                     <img src="img/gaia.webp" alt="" class="w-100 object-fit-cover" height="320">
                                 </a>
     
@@ -430,7 +430,7 @@
     
                                     <p class="mb-4 fs-md">Petz Igrejinha, Capanema - PA</p>
     
-                                    <a href="integra" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
+                                    <a href="integraGaia" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
                                         Quero Adotar
     
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
@@ -443,7 +443,7 @@
 
                         <div class="col-xxl-3 col-4">
                             <div class="card rounded overflow-hidden">
-                                <a href="integra">
+                                <a href="integraKoda">
                                     <img src="img/koda.webp" alt="" class="w-100 object-fit-cover" height="320">
                                 </a>
     
@@ -460,7 +460,7 @@
     
                                     <p class="mb-4 fs-md">Petz Centro, Teresina - PI</p>
     
-                                    <a href="integra" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
+                                    <a href="integraKoda" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
                                         Quero Adotar
     
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
@@ -473,7 +473,7 @@
 
                         <div class="col-xxl-3 col-4">
                             <div class="card rounded overflow-hidden">
-                                <a href="integra">
+                                <a href="integraLuke">
                                     <img src="img/luke.webp" alt="" class="w-100 object-fit-cover" height="320">
                                 </a>
     
@@ -490,7 +490,7 @@
     
                                     <p class="mb-4 fs-md">Petz Warta, Londrina - PR</p>
     
-                                    <a href="integra" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
+                                    <a href="integraLuke" class="btn btn-custom-2 d-flex align-items-center justify-content-center gap-2 w-100">
                                         Quero Adotar
     
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">

@@ -19,14 +19,16 @@ class CadastrarController extends Controller
     public function store(Request $request) {
         
         //dd($request->all());
-        User::create([
+        $users = User::create([
             'name' => $request->name,          
             'email' => $request->email,
             'password' => $request->password,
             
         ]);
 
+        
+
        
-       return view('painel.painel');
+       return view('painel.painel', compact('users'));
     }
 }
